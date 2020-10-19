@@ -1,32 +1,62 @@
-body {
-  padding-top: 2em;
+// General styling
+
+* {
+  color: white;
 }
 
-// navbar
+body {
+  background-color: black;
+  background-image: url("https://images.unsplash.com/photo-1573784540576-21ddeff9479b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80");
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  background-color: #c0a09155;
+  border-radius: 1px;
+  padding: 1em;
+}
+
+// Navbar
 
 #navbar {
   background-color: #96386a;
+  border-bottom: solid #c0a091 3px;
+  border-right: solid #c0a091 3px;
+  border-radius: 0 0 10px 0;
   left: 0;
+  padding: 0.3em;
   position: absolute;
   top: 0;
 
   a {
     color: #c0a091;
     text-decoration: none;
-    margin-right: 2em; 
+    margin-right: 2em;
+    margin-left: 1em;
   }
 }
 
-// home page
+// Home Page
 
 #front-imgs-container {
   display: grid;
-  grid-template-rows: 20vh 20vh 20vh;
-  height: 60vh;
-  overflow-y: hidden;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1em;
   width: 100%;
 
   img {
-    width: 100%;
+    border: solid #c0a091 3px;
+    height: 20vw;
+    object-fit: cover;
+    width: 20vw;
   }
 }
