@@ -1,24 +1,33 @@
-# README
+# Pair Programming Challenge - Tea Shoppe
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+You've been assigned to fix up an old website called the Tea Shoppe. The website already allows users to sign up and log in but it's missing all of the teas that they can register!
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
+Clone the repository and `cd` into it followed by `bundle install`. There is no seed data but you can feel free to go ahead and build users for yourself and your partner.
 
-* System dependencies
+## Models
 
-* Configuration
+There's only one model to worry about, the Tea model, which should have these attributes:
 
-* Database creation
+```
+name => string, names should be unique, required
+category => string (examples: oolong, herbal, green), required
+description => string
+```
 
-* Database initialization
+Tea names need to be unique, additionally a tea shouldn't be created without a name or category.
 
-* How to run the test suite
+## Controller
 
-* Services (job queues, cache servers, search engines, etc.)
+You'll need to build out a teas controller with these actions: index, show, new, create. The index and show should be business as usual and show teas for the current user.
 
-* Deployment instructions
+Creating a new tea should associate that tea with the user. If the tea is created without a name, category, or a non-unique name then it needs to re-render the form to create a tea. Otherwise it needs to go to the show page for that tea.
 
-* ...
+## BONUS
+
+Build an additional route that only shows teas of a specific category. For instance, the `/teas/oolong` should show every tea that is an oolong.
+
+Additionally, build out links to every defined category on the index page.
+
+HINT: There's a way you can build out these routes without needing to build any additional views. How can we best recycle the index page?
