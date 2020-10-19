@@ -1,6 +1,6 @@
 # Pair Programming Challenge - Tea Shoppe
 
-You've been assigned to fix up an old website called the Tea Shoppe. The website already allows users to sign up and log in but it's missing all of the teas that they can register!
+You've been assigned to fix up an old website called the Tea Shoppe. The website is meant as a database where users register their tea blends but it's currently missing the most important part: the teas!
 
 ## Getting Started
 

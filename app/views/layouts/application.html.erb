@@ -9,6 +9,16 @@
   </head>
 
   <body>
+
+    <nav id="navbar">
+
+      <%= link_to "Welcome", home_path %>
+
+      <%# rewrite the following anchor tag to be a `link_to` once the tea index has been set up %>
+      <a href="/teas">Teas Index</a>
+
+    </nav>
+
     <%= yield %>
   </body>
 </html>

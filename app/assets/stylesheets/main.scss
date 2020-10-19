@@ -1,0 +1,32 @@
+body {
+  padding-top: 2em;
+}
+
+// navbar
+
+#navbar {
+  background-color: #96386a;
+  left: 0;
+  position: absolute;
+  top: 0;
+
+  a {
+    color: #c0a091;
+    text-decoration: none;
+    margin-right: 2em; 
+  }
+}
+
+// home page
+
+#front-imgs-container {
+  display: grid;
+  grid-template-rows: 20vh 20vh 20vh;
+  height: 60vh;
+  overflow-y: hidden;
+  width: 100%;
+
+  img {
+    width: 100%;
+  }
+}
