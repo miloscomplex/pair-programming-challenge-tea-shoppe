@@ -1,2 +1,8 @@
 <h1>Teas#index</h1>
-<p>Find me in app/views/teas/index.html.erb</p>
+<%= @teas.each do |tea| %>
+  <p>
+    Tea Name: <%= tea.name %><br>
+    Tea Category: <%= tea.category %><br>
+    Tea Description: <%= tea.description %><br>
+  </p>
+<% end %>

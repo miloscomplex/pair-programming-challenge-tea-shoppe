@@ -13,8 +13,10 @@ class TeasController < ApplicationController
 
 
   def create
-    @tea = Tea.create(post_params(:name, :category, :description))
-    redirect_to tea_path(@tea)
+    @tea = Tea.new(post_params(:name, :category, :description))
+    if @tea.save
+      redirect_to tea_path(@tea)
+    end
   end
 
   private
